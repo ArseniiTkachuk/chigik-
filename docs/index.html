@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Список справ</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<main class="app">
+    <header>
+        <h1>Список справ</h1>
+        <button id="theme-btn">Темна тема</button>
+    </header>
+
+    <div class="add-form">
+        <input id="task-input" type="text" placeholder="Що потрібно зробити?" maxlength="100">
+        <button id="add-btn">Додати</button>
+    </div>
+
+    <div class="filters">
+        <button class="filter active" data-filter="all">Усі</button>
+        <button class="filter" data-filter="active">Активні</button>
+        <button class="filter" data-filter="done">Виконані</button>
+    </div>
+
+    <ul id="task-list"></ul>
+
+    <footer>
+        <span id="counter"></span>
+        <button id="clear-btn">Видалити виконані</button>
+    </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
